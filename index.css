@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-container {
+    background-color: #dde2ff;
+    min-height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-card {
+    background-color: #dde2ff;
+    width: 450px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px 2px #696969;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.msg-cont {
+    background-color: green;
+    margin-top: 6px;
+    border-radius: 3px;
+    margin: 6px;
+    padding: 3px;
+    margin-bottom: 0px;
+    display: none;
+}
+
+.msg-cont2 {
+    display: flex;
+    justify-content: center;
+}
+
+.msg {
+    color: lightgreen;
+    font-size: 16px;
+    font-family: "Roboto";
+}
+
+.todo-heading {
+    font-size: 38px;
+    font-family: "Caveat";
+    padding-top: 18px;
+    font-weight: 800;
+    color: #7026ed;
+    text-decoration: underline;
+}
+
+.create-cont {
+    text-align: left;
+    display: flex;
+    align-content: center;
+}
+
+.todo-task {
+    font-size: 22px;
+    font-family: "Roboto";
+    padding-top: 15px;
+    padding-left: 20px;
+    color: #1a033b;
+    font-weight: 400;
+}
+
+.task-heading {
+    font-size: 22px;
+    font-family: "Roboto";
+    font-weight: 600;
+}
+
+.icon {
+    font-size: 20px;
+    padding-top: 18px;
+    padding-left: 6px;
+    color: #191D88;
+}
+
+.input {
+    width: 75%;
+    margin-top: 25px;
+    padding: 10px;
+    background: #dde3ff;
+    outline: 2px solid #470e9d;
+    border-radius: 12px;
+    border: none;
+    opacity: 0.8;
+    color: #000000;
+    font-size: 18px;
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: bold;
+}
+
+.add-btn {
+    background-color: #470e9d;
+    height: 46px;
+    color: white;
+    opacity: 0.9;
+    width: 50px;
+    border-radius: 8px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    opacity: 0.8;
+}
+
+.add-btn:active {
+    transform: scale(0.96);
+}
+
+.ul-list-cont {
+    margin-top: 30px;
+    margin-left: 26px;
+    margin-right: 30px;
+}
+
+.active-ul-list-cont {
+    margin-top: 30px;
+    margin-left: 26px;
+    margin-right: 30px;
+    height: 140px;
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+
+
+.active-ul-list-cont::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+.active-ul-list-cont::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.active-ul-list-cont::-webkit-scrollbar-thumb {
+    background-color: #191D88;
+}
+
+
+.li-container {
+    list-style: none;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.checkbox {
+    width: 30px;
+    height: 20px;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+.label-container {
+    /*#42B3AE, #CC8899, #738678, #9CC2BF, #50c878*/
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    text-align: left;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.label-heading {
+    color: #000000;
+    font-size: 16px;
+    font-family: "Roboto";
+    width: 82%;
+}
+
+.delete-cont {
+    width: 12%;
+    text-align: right;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.delete-icon {
+    padding: 15px;
+    padding-right: 0;
+    color: #1a033b;
+    cursor: pointer;
+}
+
+.delete-icon:hover {
+    color: #470e9d;
+}
+
+.edit-icon {
+    padding: 15px;
+    padding-right: 0;
+    color: #1a033b;
+    cursor: pointer;
+}
+
+.edit-icon:hover {
+    color: #470e9d;
+}
+
+.paragraph {
+    font-size: 9px;
+    color: #470e9d;
+    font-family: "Roboto";
+    margin-top: 13px;
+    margin-left: 18px;
+}
+
+.time-icon {
+    font-size: 9px;
+    color: #470e9d;
+    margin-top: 13px;
+    margin-left: 3px;
+}
+
+.checked {
+    text-decoration: line-through;
+    filter: blur(3px);
+}
+
+.savebtn {
+    margin-top: 10px;
+    width: 65px;
+    height: 35px;
+    background-color: transparent;
+    border: 2px solid #470e9d;
+    color: #470e9d;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.savebtn:hover {
+    width: 65px;
+    height: 35px;
+    background-color: #470e9d;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
